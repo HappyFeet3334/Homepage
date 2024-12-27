@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'JetBrains Mono', monospace;
-    color: white;
+    color: #CAD3F5;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #42423e;
+    background-color: #181926;
 }
 
 .main {
@@ -68,17 +68,15 @@ body {
 }
 
 .searching {
-    background-color: green;
+    background-color: #1E2030;
     border-radius: 10px;
     padding: 3px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .starter {
     font-size: 3vh;
+    display: flex;
 }
 
 #search {
@@ -86,4 +84,51 @@ body {
     border: transparent;
     font-size: 3vh;
     outline: none;
+    width: 70vh;
+}
+
+/* Style for the heart icon */
+.nf-fa-heart {
+    color: #f38ba8; /* Set the color to red */
+}
+
+/* Style for the vim icon */
+.nf-custom-vim {
+    color: #a6e3a1; /* Set the color to green */
+}
+
+.nf-fa-face_smile_beam {
+    color: #f9e2af;
+}
+
+/* Style for the GitHub icon */
+.nf-fa-github {
+    color: #CAD3F5; /* Change color of the GitHub icon */
+    margin-right: 1vh;
+}
+
+/* Style for the word 'main' */
+.word-main {
+    color: #fab387; /* Blue color for 'main' */
+    margin-right: 1vh;
+}
+
+/* Style for the word 'Happyfeet3334' */
+.word-happyfeet {
+    color: #f38ba8; /* Orange color for 'Happyfeet3334' */
+}
+
+/* Style for the '@minimal' word */
+.word-host {
+    color: #cba6f7; /* Green color for '@minimal' */
+}
+
+/* Style for the ':~$' part */
+.word-terminal {
+    color: #89b4fa; /* Gray color for ':~$' */
+    margin-right: 1vh;
+}
+
+.terminal-form {
+    display: flex;
 }
