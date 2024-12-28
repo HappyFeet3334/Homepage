@@ -138,99 +138,75 @@ body {
 }
 
 .shortcuts {
-    display: flexbox;
+    display: flex;
+    flex-wrap: wrap;  /* Allows items to wrap when the container is too narrow */
+    justify-content: center;  /* Centers items horizontally */
     margin-top: 10vh;
+    gap: 20px; /* Adds a gap between items both horizontally and vertically */
 }
 
-.nf-fa-github {
+.nf-fa-github, .nf-fa-youtube, .nf-fa-reddit, .nf-fa-spotify, .nf-fa-discord {
     color: white;
     font-size: 100px;
     padding: 20px;
     margin: 10px;
     background-color: #11111b;
     border-radius: 10px;
+    transition: all 0.3s ease; /* Smooth transition on hover */
 }
 
 .nf-fa-github:hover {
     color: #11111b;
-    font-size: 100px;
-    padding: 20px;
-    margin: 10px;
     background-color: white;
-    border-radius: 10px;
 }
 
 .nf-fa-youtube {
-    color: white;
-    font-size: 100px;
-    padding: 20px;
-    margin: 10px;
     background-color: #f38ba8;
-    border-radius: 10px;
 }
 
 .nf-fa-youtube:hover {
     color: #f38ba8;
-    font-size: 100px;
-    padding: 20px;
-    margin: 10px;
     background-color: white;
-    border-radius: 10px;
 }
 
 .nf-fa-reddit {
-    color: white;
-    font-size: 100px;
-    padding: 20px;
-    margin: 10px;
     background-color: #fab387;
-    border-radius: 10px;
 }
 
 .nf-fa-reddit:hover {
     color: #fab387;
-    font-size: 100px;
-    padding: 20px;
-    margin: 10px;
     background-color: white;
-    border-radius: 10px;
 }
 
 .nf-fa-spotify {
-    color: white;
-    font-size: 100px;
-    padding: 20px;
-    margin: 10px;
     background-color: #a6e3a1;
-    border-radius: 10px;
 }
 
 .nf-fa-spotify:hover {
     color: #a6e3a1;
-    font-size: 100px;
-    padding: 20px;
-    margin: 10px;
     background-color: white;
-    border-radius: 10px;
 }
 
 .nf-fa-discord {
-    color: white;
-    font-size: 100px;
-    padding: 20px;
-    margin: 10px;
     background-color: #cba6f7;
-    border-radius: 10px;
 }
 
 .nf-fa-discord:hover {
     color: #cba6f7;
-    font-size: 100px;
-    padding: 20px;
-    margin: 10px;2
     background-color: white;
-    border-radius: 10px;
 }
+
+/* Media query for smaller screen sizes */
+@media (max-width: 600px) {
+    .shortcuts {
+        flex-direction: column;  /* Stacks the items vertically */
+    }
+
+    .nf-fa-github, .nf-fa-youtube, .nf-fa-reddit, .nf-fa-spotify, .nf-fa-discord {
+        font-size: 80px; /* Optional: Adjust icon size for smaller screens */
+    }
+}
+
 
 @media (max-width: 1200px) {
     #current-time {
@@ -320,6 +296,43 @@ body {
 }
 
 @media (max-width: 695px) {
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+    
+    .welcome-message {
+        margin-bottom: 7vmin;
+        font-size: 50px;
+    }
+    
+    .date-time {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .time-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+        margin-right: 125px;
+    }
+    
+    .date-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }
+
     #current-time {
         font-family: 'JetBrains Mono', monospace;
         font-size: 40px;
@@ -345,5 +358,85 @@ body {
         outline: none;
         height: 52px;
         width: 140px;
+    }
+}
+
+@media (max-width: 645px) {
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .welcome-message {
+        margin-bottom: 7vmin;
+        font-size: 23px;
+    }
+    
+    .date-time {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .time-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        margin-right: 125px;
+    }
+    
+    .date-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #current-time {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 20px;
+    }
+    
+    .time-message {
+        font-size: 7px;
+    }
+    
+    #current-date {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 20px;
+    }
+    
+    #temp {
+        font-size: 7px;
+    }
+
+    .searching {
+        background-color: #1E2030;
+        border-radius: 10px;
+        padding: 3px;
+        display: flex;
+    }
+    
+    .starter {
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #search {
+        background-color: transparent;
+        border: transparent;
+        font-size: 15px;
+        outline: none;
+        height: 52px;
+        width: 100px;
     }
 }
