@@ -6,7 +6,7 @@
 }
 
 body {
-    height: 100vh;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,12 +18,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10vh;
+    padding: 5vmin;
 }
 
 .welcome-message {
-    padding: 1vh;
-    font-size: 5vh;
+    margin-bottom: 7vmin;
+    font-size: 50px;
 }
 
 .date-time {
@@ -37,8 +37,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10vh;
-    margin-right: 30vh;
+    margin: 10vmin;
+    margin-right: 125px;
 }
 
 .date-section {
@@ -46,25 +46,25 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10vh;
+    margin: 10vmin;
 }
 
 #current-time {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 10vh;
+    font-size: 120px;
 }
 
 .time-message {
-    font-size: 3vh;
+    font-size: 120/3px;
 }
 
 #current-date {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 10vh;
+    font-size: 120px;
 }
 
 #temp {
-    font-size: 3vh;
+    font-size: 120/3px;
 }
 
 .searching {
@@ -75,16 +75,19 @@ body {
 }
 
 .starter {
-    font-size: 3vh;
+    font-size: 23px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #search {
     background-color: transparent;
     border: transparent;
-    font-size: 3vh;
+    font-size: 23px;
     outline: none;
-    width: 70vh;
+    height: 52px;
+    width: 720px;
 }
 
 /* Style for the heart icon */
@@ -102,15 +105,16 @@ body {
 }
 
 /* Style for the GitHub icon */
-.nf-fa-github {
-    color: #CAD3F5; /* Change color of the GitHub icon */
-    margin-right: 1vh;
+.nf-dev-git_branch {
+    color: #fab387; /* Change color of the GitHub icon */
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Style for the word 'main' */
 .word-main {
     color: #fab387; /* Blue color for 'main' */
-    margin-right: 1vh;
+    margin-right: 10px;
 }
 
 /* Style for the word 'Happyfeet3334' */
@@ -126,9 +130,220 @@ body {
 /* Style for the ':~$' part */
 .word-terminal {
     color: #89b4fa; /* Gray color for ':~$' */
-    margin-right: 1vh;
+    margin-right: 10px;
 }
 
 .terminal-form {
     display: flex;
+}
+
+.shortcuts {
+    display: flexbox;
+    margin-top: 10vh;
+}
+
+.nf-fa-github {
+    color: white;
+    font-size: 100px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #11111b;
+    border-radius: 10px;
+}
+
+.nf-fa-github:hover {
+    color: #11111b;
+    font-size: 100px;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nf-fa-youtube {
+    color: white;
+    font-size: 100px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f38ba8;
+    border-radius: 10px;
+}
+
+.nf-fa-youtube:hover {
+    color: #f38ba8;
+    font-size: 100px;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nf-fa-reddit {
+    color: white;
+    font-size: 100px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fab387;
+    border-radius: 10px;
+}
+
+.nf-fa-reddit:hover {
+    color: #fab387;
+    font-size: 100px;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nf-fa-spotify {
+    color: white;
+    font-size: 100px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #a6e3a1;
+    border-radius: 10px;
+}
+
+.nf-fa-spotify:hover {
+    color: #a6e3a1;
+    font-size: 100px;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nf-fa-discord {
+    color: white;
+    font-size: 100px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #cba6f7;
+    border-radius: 10px;
+}
+
+.nf-fa-discord:hover {
+    color: #cba6f7;
+    font-size: 100px;
+    padding: 20px;
+    margin: 10px;2
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    #current-time {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 100px;
+    }
+    
+    .time-message {
+        font-size: 100/3px;
+    }
+    
+    #current-date {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 100px;
+    }
+    
+    #temp { 
+        font-size: 100/3px;
+    }
+
+    #search {
+        background-color: transparent;
+        border: transparent;
+        font-size: 23px;
+        outline: none;
+        height: 52px;
+        width: 600px;
+    }
+}
+
+@media (max-width: 1070px) {
+    #current-time {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 80px;
+    }
+    
+    .time-message {
+        font-size: 80/3px;
+    }
+    
+    #current-date {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 80px;
+    }
+    
+    #temp {
+        font-size: 80/3px;
+    }
+
+    #search {
+        background-color: transparent;
+        border: transparent;
+        font-size: 23px;
+        outline: none;
+        height: 52px;
+        width: 360px;
+    }
+}
+
+@media (max-width: 870px) {
+    #current-time {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 60px;
+    }
+    
+    .time-message {
+        font-size: 60/3px;
+    }
+    
+    #current-date {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 60px;
+    }
+    
+    #temp {
+        font-size: 60/3px;
+    }
+
+    #search {
+        background-color: transparent;
+        border: transparent;
+        font-size: 23px;
+        outline: none;
+        height: 52px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 695px) {
+    #current-time {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 40px;
+    }
+    
+    .time-message {
+        font-size: 40/3px;
+    }
+    
+    #current-date {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 40px;
+    }
+    
+    #temp {
+        font-size: 40/3px;
+    }
+
+    #search {
+        background-color: transparent;
+        border: transparent;
+        font-size: 23px;
+        outline: none;
+        height: 52px;
+        width: 140px;
+    }
 }
