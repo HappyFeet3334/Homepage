@@ -10,7 +10,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #181926;
+    background-image: url('cat_mocha_version.jpg'); /* Replace with your image path */
+    background-size: cover; /* Scales the image to cover the entire background */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Optional: makes the background image fixed when scrolling */
 }
 
 .main {
@@ -24,6 +28,8 @@ body {
 .welcome-message {
     margin-bottom: 7vmin;
     font-size: 50px;
+    background-color: #1E2030;
+    padding: 10px;
 }
 
 .date-time {
@@ -105,7 +111,7 @@ body {
 }
 
 /* Style for the GitHub icon */
-.nf-dev-git_branch {
+.nf-custom-folder_github {
     color: #fab387; /* Change color of the GitHub icon */
     margin-left: 10px;
     margin-right: 10px;
@@ -143,6 +149,8 @@ body {
     justify-content: center;  /* Centers items horizontally */
     margin-top: 10vh;
     gap: 20px; /* Adds a gap between items both horizontally and vertically */
+    padding: 10px;
+    background-color: #1E2030;
 }
 
 .nf-fa-github, .nf-fa-youtube, .nf-fa-reddit, .nf-fa-spotify, .nf-fa-discord {
