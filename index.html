@@ -1,50 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta tags for character encoding and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
     <title>Homeage</title>
-    <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Link to external CSS files -->
+    <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css"> <!-- Nerd Fonts for icons -->
+    <link rel="stylesheet" href="styles.css"> <!-- Custom styles -->
 </head>
+
 <body>
 
+    <!-- Date and time container -->
     <div class="date-time">
+        <!-- Time section -->
         <div class="time-section">
+            <!-- Current time display -->
             <div id="current-time"></div>
-            <p class="time-message">I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim"></i></p>
+            <!-- Time message, including icons for heart and Vim -->
+            <p class="time-message">
+                I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim"></i>
+            </p>
         </div>
+
+        <!-- Date section -->
         <div class="date-section">
+            <!-- Current date display -->
             <div id="current-date"></div>
-            <!-- <p id="temp">Tempature coming soon!<i class="nf nf-fa-face_smile_beam"></i></p> -->
+            <!-- Temperature (currently commented out) -->
+            <!-- <p id="temp">Temperature coming soon!<i class="nf nf-fa-face_smile_beam"></i></p> -->
         </div>
     </div>
 
+    <!-- Main content section -->
     <div class="main">
+        <!-- Welcome message for the user -->
         <h1 class="welcome-message">Welcome back Happyfeet3334</h1>
+
+        <!-- Search bar container -->
         <div class="searching">
+            <!-- Search form that submits to Google -->
             <form action="https://www.google.com/search" method="get" class="terminal-form">
+                <!-- Label for the search bar, styled as a terminal prompt -->
                 <label class="starter" for="search">
-                    <i class="nf nf-custom-folder_github"></i> 
-                    <span class="word-main">main</span> 
+                    <!-- GitHub icon and terminal prompt styling -->
+                    <i class="nf nf-custom-folder_github"></i>
+                    <span class="word-main">main</span>
                     <span class="word-happyfeet">Happyfeet3334</span>
                     <p class="word-host">@word-host</p>
                     <p class="word-terminal">:~$</p>
                 </label>
+                <!-- Input field for searching -->
                 <input type="text" name="q" id="search" placeholder="" autocomplete="off" autofocus>
             </form>
         </div>
 
+        <!-- Social media shortcuts container -->
         <div class="shortcuts">
+            <!-- Social media icons as clickable buttons -->
             <i class="nf nf-fa-github" id="github"></i>
             <i class="nf nf-fa-youtube" id="youtube"></i>
             <i class="nf nf-fa-spotify" id="spotify"></i>
             <i class="nf nf-fa-reddit" id="reddit"></i>
             <i class="nf nf-fa-discord" id="discord"></i>
         </div>
-
     </div>
 
+    <!-- Link to external JavaScript file -->
     <script src="index.js"></script>
 </body>
+
 </html>

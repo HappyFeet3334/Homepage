@@ -1,22 +1,25 @@
+/* General reset for all elements */
 * {
     margin: 0;
     padding: 0;
-    font-family: 'JetBrains Mono', monospace;
-    color: #CAD3F5;
+    font-family: 'JetBrains Mono', monospace; /* Set default font */
+    color: #CAD3F5; /* Default text color */
 }
 
+/* Style for the body */
 body {
     max-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('cat_mocha_version.jpg'); /* Replace with your image path */
-    background-size: cover; /* Scales the image to cover the entire background */
-    background-position: center center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-attachment: fixed; /* Optional: makes the background image fixed when scrolling */
+    background-image: url('imgs/cat_mocha_version.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
 }
 
+/* Main section styling */
 .main {
     display: flex;
     flex-direction: column;
@@ -25,19 +28,22 @@ body {
     padding: 5vmin;
 }
 
+/* Welcome message styling */
 .welcome-message {
     margin-bottom: 7vmin;
     font-size: 50px;
-    background-color: #1E2030;
+    background-color: #1E2030; /* Dark background for contrast */
     padding: 10px;
 }
 
+/* Styling for date and time container */
 .date-time {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Styling for time section */
 .time-section {
     display: flex;
     flex-direction: column;
@@ -47,6 +53,7 @@ body {
     margin-right: 125px;
 }
 
+/* Styling for date section */
 .date-section {
     display: flex;
     flex-direction: column;
@@ -55,24 +62,29 @@ body {
     margin: 10vmin;
 }
 
+/* Styling for the current time */
 #current-time {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 120px;
+    font-size: 120px; /* Large time font */
 }
 
+/* Styling for the time message */
 .time-message {
-    font-size: 120/3px;
+    font-size: 120/3px; /* Smaller font for the message */
 }
 
+/* Styling for current date */
 #current-date {
     font-family: 'JetBrains Mono', monospace;
     font-size: 120px;
 }
 
+/* Styling for temperature */
 #temp {
     font-size: 120/3px;
 }
 
+/* Search bar container */
 .searching {
     background-color: #1E2030;
     border-radius: 10px;
@@ -80,6 +92,7 @@ body {
     display: flex;
 }
 
+/* Starter text in the search bar */
 .starter {
     font-size: 23px;
     display: flex;
@@ -87,6 +100,7 @@ body {
     align-items: center;
 }
 
+/* Styling for the search input */
 #search {
     background-color: transparent;
     border: transparent;
@@ -96,63 +110,69 @@ body {
     width: 720px;
 }
 
-/* Style for the heart icon */
+/* Icon styles */
+
+/* Heart icon */
 .nf-fa-heart {
-    color: #f38ba8; /* Set the color to red */
+    color: #f38ba8; /* Red color */
 }
 
-/* Style for the vim icon */
+/* Vim icon */
 .nf-custom-vim {
-    color: #a6e3a1; /* Set the color to green */
+    color: #a6e3a1; /* Green color */
 }
 
+/* Smiling face icon */
 .nf-fa-face_smile_beam {
     color: #f9e2af;
 }
 
-/* Style for the GitHub icon */
+/* GitHub icon */
 .nf-custom-folder_github {
-    color: #fab387; /* Change color of the GitHub icon */
+    color: #fab387; /* GitHub color */
     margin-left: 10px;
     margin-right: 10px;
 }
 
-/* Style for the word 'main' */
+/* 'Main' word styling */
 .word-main {
-    color: #fab387; /* Blue color for 'main' */
+    color: #fab387; /* GitHub color */
     margin-right: 10px;
 }
 
-/* Style for the word 'Happyfeet3334' */
+/* 'Happyfeet3334' word styling */
 .word-happyfeet {
-    color: #f38ba8; /* Orange color for 'Happyfeet3334' */
+    color: #f38ba8; /* Red color */
 }
 
-/* Style for the '@minimal' word */
+/* '@minimal' word styling */
 .word-host {
-    color: #cba6f7; /* Green color for '@minimal' */
+    color: #cba6f7; /* Light purple color */
 }
 
-/* Style for the ':~$' part */
+/* ':~$' terminal-like word styling */
 .word-terminal {
-    color: #89b4fa; /* Gray color for ':~$' */
+    color: #89b4fa; /* Light blue color */
     margin-right: 10px;
 }
 
+/* Terminal form container */
 .terminal-form {
     display: flex;
 }
 
+/* Shortcuts section styling */
 .shortcuts {
     display: flex;
-    flex-wrap: wrap;  /* Allows items to wrap when the container is too narrow */
-    justify-content: center;  /* Centers items horizontally */
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+    justify-content: center;
     margin-top: 10vh;
-    gap: 20px; /* Adds a gap between items both horizontally and vertically */
+    gap: 20px;
     padding: 10px;
     background-color: #1E2030;
 }
 
+/* Social media icon button styles */
 .nf-fa-github, .nf-fa-youtube, .nf-fa-reddit, .nf-fa-spotify, .nf-fa-discord {
     color: white;
     font-size: 100px;
@@ -163,6 +183,7 @@ body {
     transition: all 0.3s ease; /* Smooth transition on hover */
 }
 
+/* Hover effects for each social media icon */
 .nf-fa-github:hover {
     color: #11111b;
     background-color: white;
@@ -207,244 +228,158 @@ body {
 /* Media query for smaller screen sizes */
 @media (max-width: 600px) {
     .shortcuts {
-        flex-direction: column;  /* Stacks the items vertically */
+        flex-direction: column; /* Stack items vertically */
     }
 
     .nf-fa-github, .nf-fa-youtube, .nf-fa-reddit, .nf-fa-spotify, .nf-fa-discord {
-        font-size: 80px; /* Optional: Adjust icon size for smaller screens */
+        font-size: 80px; /* Adjust icon size for smaller screens */
     }
 }
 
-
+/* Adjustments for medium-sized screens */
 @media (max-width: 1200px) {
     #current-time {
-        font-family: 'JetBrains Mono', monospace;
         font-size: 100px;
     }
-    
+
     .time-message {
         font-size: 100/3px;
     }
-    
+
     #current-date {
-        font-family: 'JetBrains Mono', monospace;
         font-size: 100px;
     }
-    
+
     #temp { 
         font-size: 100/3px;
     }
 
     #search {
-        background-color: transparent;
-        border: transparent;
-        font-size: 23px;
-        outline: none;
-        height: 52px;
         width: 600px;
     }
 }
 
+/* Adjustments for smaller screens */
 @media (max-width: 1070px) {
     #current-time {
-        font-family: 'JetBrains Mono', monospace;
         font-size: 80px;
     }
-    
+
     .time-message {
         font-size: 80/3px;
     }
-    
+
     #current-date {
-        font-family: 'JetBrains Mono', monospace;
         font-size: 80px;
     }
-    
+
     #temp {
         font-size: 80/3px;
     }
 
     #search {
-        background-color: transparent;
-        border: transparent;
-        font-size: 23px;
-        outline: none;
-        height: 52px;
         width: 360px;
     }
 }
 
+/* Further adjustments for small screens */
 @media (max-width: 870px) {
     #current-time {
-        font-family: 'JetBrains Mono', monospace;
         font-size: 60px;
     }
-    
+
     .time-message {
         font-size: 60/3px;
     }
-    
+
     #current-date {
-        font-family: 'JetBrains Mono', monospace;
         font-size: 60px;
     }
-    
+
     #temp {
         font-size: 60/3px;
     }
 
     #search {
-        background-color: transparent;
-        border: transparent;
-        font-size: 23px;
-        outline: none;
-        height: 52px;
         width: 200px;
     }
 }
 
+/* Adjustments for very small screens */
 @media (max-width: 695px) {
-
     .main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         padding: 50px;
     }
-    
+
     .welcome-message {
-        margin-bottom: 7vmin;
         font-size: 50px;
     }
-    
-    .date-time {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .time-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 50px;
-        margin-right: 125px;
-    }
-    
-    .date-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+    .time-section, .date-section {
         margin: 50px;
     }
 
     #current-time {
-        font-family: 'JetBrains Mono', monospace;
         font-size: 40px;
     }
-    
+
     .time-message {
         font-size: 40/3px;
     }
-    
+
     #current-date {
-        font-family: 'JetBrains Mono', monospace;
         font-size: 40px;
     }
-    
+
     #temp {
         font-size: 40/3px;
     }
 
     #search {
-        background-color: transparent;
-        border: transparent;
-        font-size: 23px;
-        outline: none;
-        height: 52px;
         width: 140px;
     }
 }
 
+/* Adjustments for extremely small screens */
 @media (max-width: 645px) {
-
     .main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         padding: 10px;
     }
-    
+
     .welcome-message {
-        margin-bottom: 7vmin;
         font-size: 23px;
     }
-    
-    .date-time {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .time-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 10px;
-        margin-right: 125px;
-    }
-    
-    .date-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+    .time-section, .date-section {
         margin: 10px;
     }
 
     #current-time {
-        font-family: 'JetBrains Mono', monospace;
         font-size: 23px;
     }
-    
+
     .time-message {
         font-size: 7px;
     }
-    
+
     #current-date {
-        font-family: 'JetBrains Mono', monospace;
         font-size: 23px;
     }
-    
+
     #temp {
         font-size: 7px;
     }
 
     .searching {
-        background-color: #1E2030;
-        border-radius: 10px;
         padding: 3px;
-        display: flex;
     }
-    
+
     .starter {
         font-size: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
-    
+
     #search {
-        background-color: transparent;
-        border: transparent;
         font-size: 15px;
-        outline: none;
-        height: 52px;
         width: 100px;
     }
 }
