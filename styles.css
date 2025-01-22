@@ -173,7 +173,7 @@ body {
 }
 
 /* Social media icon button styles */
-.nf-fa-github, .nf-fa-youtube, .nf-fa-reddit, .nf-fa-spotify, .nf-fa-discord {
+.nf-fa-github, .nf-fa-youtube, .nf-fa-reddit, .nf-fa-spotify, .nf-fa-discord, .nf-md-head_question, .nf-fa-google_drive, .nf-fa-book {
     color: white;
     font-size: 100px;
     padding: 20px;
@@ -222,6 +222,33 @@ body {
 
 .nf-fa-discord:hover {
     color: #cba6f7;
+    background-color: white;
+}
+
+.nf-md-head_question {
+    background-color: #94e2d5;
+}
+
+.nf-md-head_question:hover {
+    color: #94e2d5;
+    background-color: white;
+}
+
+.nf-fa-google_drive {
+    background-color: #89b4fa;
+}
+
+.nf-fa-google_drive:hover {
+    color: #89b4fa;
+    background-color: white;
+}
+
+.nf-fa-book {
+    background-color: #fab387;
+}
+
+.nf-fa-book:hover {
+    color: #fab387;
     background-color: white;
 }
 

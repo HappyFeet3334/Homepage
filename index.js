@@ -45,6 +45,10 @@ const youtubeIcon = document.getElementById('youtube');
 const spotifyIcon = document.getElementById('spotify');
 const redditIcon = document.getElementById('reddit');
 const discordIcon = document.getElementById('discord');
+const D2LIcon = document.getElementById('D2L');
+const google_driveIcon = document.getElementById('google_drive');
+const zybooksIconIcon = document.getElementById('zybooks');
+
 
 // Open the respective URLs in a new tab when icons are clicked
 githubIcon.addEventListener('click', function() {
@@ -65,6 +69,18 @@ redditIcon.addEventListener('click', function() {
 
 discordIcon.addEventListener('click', function() {
     window.open('https://discord.com/channels/@me', '_blank'); // Open Discord
+});
+
+D2LIcon.addEventListener('click', function() {
+    window.open('https://d2l.msu.edu/d2l/home', '_blank'); // Open D2L
+});
+
+google_driveIcon.addEventListener('click', function() {
+    window.open('https://drive.google.com/drive/u/2/home', '_blank'); // Open Google Drive
+});
+
+zybooksIconIcon.addEventListener('click', function() {
+    window.open('https://learn.zybooks.com/library', '_blank'); // Open Zybooks
 });
 
 // Run the functions when the page loads
