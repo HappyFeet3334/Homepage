@@ -170,6 +170,7 @@ body {
     gap: 20px;
     padding: 10px;
     background-color: #1E2030;
+    max-width: 900px;
 }
 
 /* Social media icon button styles */
